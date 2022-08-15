@@ -3,7 +3,8 @@
     --main-color-dark: #43121d;
     --text-color: #777;
     --white-color: #fff;
-
+    --black-color: #000;
+    --gradient: linear-gradient(to right, rgba(168, 45, 73, 0.5), rgba(228, 77, 38, 0.5));
 }
 
 /* animations */
