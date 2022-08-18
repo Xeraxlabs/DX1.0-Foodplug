@@ -13,12 +13,37 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="defaults.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
-
+    <div class="backdrop" onclick="Addclass()"></div>
     <!-- header section starts here -->
     <header>
+        <nav class="nav-mobile">
+
+            <div class="nav-mobile__brand">
+                <div class="mobile-nav__logo-holder">
+                    <i class="fa-regular fa-hand-lizard"></i>
+                </div>
+                <span>foodplug</span>
+            </div>
+
+            <div class="hamburger-menu" onclick="Addclass()">
+                <div class="menubars"></div>
+            </div>
+
+            <div class="mobile__link-holder">
+                <ul>
+                    <li><a href="#" class="mobile__header-links active-link">Home</a></li>
+                    <li><a href="#aboutus" class="mobile__header-links">About Us</a></li>
+                    <li><a href="#explorefoods" class="mobile__header-links">Explore Foods</a></li>
+                    <li><a href="#faq" class="mobile__header-links">FAQ</a></li>
+                </ul>
+                <button class="btn">+1 (000) XXX-XXXX</button>
+            </div>
+        </nav>
+
         <nav class="nav-desktop">
             <div class="header-logo">
                 <i class="fa-regular fa-hand-lizard"></i>
@@ -317,6 +342,9 @@
         </div>
     </footer>
     <!-- footer section ends here -->
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>

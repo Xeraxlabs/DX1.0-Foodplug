@@ -70,6 +70,141 @@ span a {
 /* header section starts here */
 
 /* nav section starts here */
+
+.backdrop {
+    background: var(--light-text-color);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* =============== */
+.nav-mobile {
+    display: none;
+    background: var(--main-color);
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.nav-mobile__brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-mobile__brand span {
+    color: var(--white-color);
+    margin-left: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.mobile-nav__logo-holder {
+    padding: 5px;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.hamburger-menu {
+    /* border: 2px solid var(--white-color); */
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.menubars {
+    height: 3px;
+    background: var(--white-color);
+    width: 100%;
+    position: relative;
+}
+
+.menubars::before,
+.menubars::after {
+    content: '';
+    background: var(--white-color);
+    position: absolute;
+    width: 100%;
+    height: 3px;
+}
+
+.menubars::before {
+    transform: translateY(-10px);
+}
+
+.menubars::after {
+    transform: translateY(10px);
+}
+
+.show .menubars {
+    background: transparent;
+}
+
+.show .menubars::before {
+    transform: rotate(45deg);
+    background: var(--main-color);
+
+}
+
+.show .menubars::after {
+    transform: rotate(-45deg);
+    background: var(--main-color);
+
+}
+
+.mobile__link-holder {
+    display: none;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    background: var(--main-color);
+    right: 0;
+    top: 0;
+    /* padding-left: 15px; */
+}
+
+.showlinks {
+    display: block;
+}
+
+.mobile__link-holder button {
+    border: 2px solid var(--white-color);
+    background: transparent;
+    color: var(--white-color);
+    margin-left: 15px;
+}
+
+.mobile__link-holder li {
+    list-style: none;
+}
+
+.mobile__header-links {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.mobile__header-links:hover,
+.mobile__header-links:focus {
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
+.active-link {
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
+/* =============== */
 .nav-desktop {
     position: fixed;
     width: 100%;
@@ -220,8 +355,10 @@ span a {
 }
 
 .about-us__card-imageholder img {
-    height: auto;
+    /* height: auto; */
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 
     /* tutorial purposes */
     /* height: 100%; */
@@ -231,7 +368,7 @@ span a {
 }
 
 .about-us__text-contentholder {
-    height: 350px;
+    /* height: 350px; */
     width: 48%;
     /* border: 3px solid blue; */
 }
@@ -281,7 +418,7 @@ span a {
     align-items: center;
     /* border: 3px solid tomato; */
     text-align: center;
-    height: 250px;
+    /* height: 250px; */
     background: var(--gray-gradient), url('./img/about3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -342,6 +479,7 @@ span a {
 .foodcard-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     /* border: 3px solid tomato; */
 }
