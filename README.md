@@ -17,6 +17,7 @@ A simple Food business responsive landing page, A complete guide about how to bu
 # Steps to use Application
 
 - Download Entire code
+- locate and open the folder named "final"
 - Open the index.html file
 
 Feel free to edit and use as you like, A credit to the original authors [Israel Akinwumi](https://twitter.com/akinwumidi) and [Xerax labs](https://twitter.com/xeraxlabs) will be appreciated.
@@ -79,7 +80,7 @@ Default variables used
 - [dxexplore](https://github.com/Xeraxlabs/dx-explore)
 
 ## Disclaimer
-We do not claim to be the original authors of the images used in this project, all image credits belong to their respective owners.
+We do not claim to be the original authors of the images used in this project, all image credits belong to their respective owners.credits [Unsplash](https://unsplash.com/)
 
 ## License
 
